@@ -24,10 +24,10 @@ def get_llm():
         GenParams.TEMPERATURE: 0.5,
     }
 
-    project_id = "skills-network"
+    project_id = <Write your own>
     watsonx_llm = WatsonxLLM(
         model_id = model_id,
-        url="https://us-south.ml.cloud.ibm.com",
+        url=<Own cloud services url>,
         project_id = project_id,
         params = parameters,
     )
@@ -59,8 +59,8 @@ def watsonx_embedding():
 
     watsonx_embedding = WatsonxEmbeddings(
         model_id = "ibm/slate-125m-english-rtrvr",
-        url = "https://us-south.ml.cloud.ibm.com",
-        project_id = "skills-network",
+        url = <Own cloud services url>,
+        project_id = <Write your own>,
         params = embed_params,
     )
 
@@ -76,8 +76,8 @@ def watsonx_embedding():
 
 #             watsonx_embedding = WatsonxEmbeddings(
 #                 model_id = "ibm/slate-125m-english-rtrvr",
-#                 url = "https://us-south.ml.cloud.ibm.com",
-#                 project_id = "skills-network",
+#                 url = <Own cloud services url>,
+#                 project_id = <Write your own>,
 #                 params = embed_params,
 #             )
 
